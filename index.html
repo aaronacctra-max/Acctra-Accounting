@@ -44,6 +44,23 @@ nav a {
   transition: color 0.25s ease;
 }
 nav a:hover { color: #1d4ed8; }
+.revenue-link {
+  background: #00693E !important; /* Official Revenue dark green */
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+.revenue-link:hover {
+  background: #00532f !important; /* Darker green hover */
+}
+.revenue-link img {
+  height: 20px;
+  width: auto;
+}
 .hero {
   padding: 140px 5% 100px;
   text-align: center;
@@ -219,7 +236,10 @@ footer {
     <a href="#pricing">Packages</a>
     <a href="#contact">Contact</a>
     <a href="startup-package.html">Startup Package</a>
-    <a href="revenue-updates.html">Revenue Updates</a>
+    <a href="revenue-updates.html" class="revenue-link">
+      <img src="https://www.revenue.ie/en/_layouts/15/images/favicon.ico" alt="Revenue Logo">
+      Revenue Updates
+    </a>
   </nav>
 </header>
 
