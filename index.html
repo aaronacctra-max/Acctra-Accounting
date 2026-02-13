@@ -14,11 +14,20 @@ body {
   background-color: #f9fafb;
   color: #111827;
   line-height: 1.6;
+  /* Subtle logo watermark background */
+  background-image: 
+    url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'),
+    linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92)); /* faint overlay for readability */
+  background-size: 60% auto, cover; /* logo size ~60% width, centered; adjust % as needed */
+  background-position: center center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed; /* fixed watermark effect */
+  min-height: 100vh;
 }
 
-/* Header - Sticky with glassmorphism */
+/* Header */
 header {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding: 20px 5%;
@@ -49,7 +58,9 @@ nav a:hover {
 .hero {
   padding: 140px 5% 100px;
   text-align: center;
-  background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+  background: rgba(255, 255, 255, 0.88); /* slight overlay for contrast */
+  border-radius: 0 0 2rem 2rem;
+  margin: 0 5%;
 }
 .hero h1 {
   font-size: 3.5rem;
@@ -74,6 +85,7 @@ nav a:hover {
   font-weight: 600;
   box-shadow: 0 10px 25px rgba(29, 78, 216, 0.15);
   transition: all 0.3s ease;
+  margin: 0 12px 12px;
 }
 .button:hover {
   background: #1e40af;
@@ -81,18 +93,24 @@ nav a:hover {
   box-shadow: 0 15px 35px rgba(29, 78, 216, 0.25);
 }
 
-/* Services */
-.services {
+/* Services, Pricing, Contact - with subtle overlay for readability */
+.services, .pricing-section, .contact {
   padding: 100px 5%;
-  background: white;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  margin: 2rem 5%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
-.services h2 {
+.services h2, .pricing-section h2, .contact h2 {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
   color: #111827;
 }
+
+/* Rest of styles (services grid, table, form, footer) remain similar */
 .services-subtitle {
   font-size: 1.25rem;
   color: #6b7280;
@@ -109,9 +127,7 @@ nav a:hover {
   margin: auto;
 }
 .service-item {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(229, 231, 235, 0.5);
   border-radius: 1.5rem;
   padding: 2rem;
@@ -131,18 +147,7 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* Pricing */
-.pricing-section {
-  padding: 100px 5%;
-  background: #f9fafb;
-  text-align: center;
-}
-.pricing-section h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 3rem;
-  color: #111827;
-}
+/* Pricing table */
 .comparison-table {
   max-width: 1100px;
   margin: auto;
@@ -167,28 +172,46 @@ nav a:hover {
   color: #1d4ed8;
 }
 
-/* Contact */
-.contact {
-  padding: 100px 5%;
-  text-align: center;
-  background: white;
+/* Contact form */
+.form-container {
+  max-width: 600px;
+  margin: 3rem auto 0;
+  text-align: left;
 }
-.contact h2 {
-  font-size: 2.75rem;
-  margin-bottom: 1.5rem;
+.form-container label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  color: #374151;
 }
-.contact p {
-  font-size: 1.25rem;
-  margin: 1rem 0;
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #f9fafb;
 }
-.contact a {
-  color: #1d4ed8;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.25rem;
+.form-container textarea {
+  min-height: 120px;
+  resize: vertical;
 }
-.contact a:hover {
-  text-decoration: underline;
+.form-container button {
+  margin-top: 1.5rem;
+  padding: 0.875rem 2rem;
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form-container button:hover {
+  background: #1e40af;
+  transform: translateY(-3px);
 }
 
 /* Footer */
@@ -215,7 +238,8 @@ footer {
 <section class="hero">
   <h1>Expert Accounting Services Across Ireland</h1>
   <p>Dublin-based firm delivering reliable bookkeeping, tax, VAT, payroll, and compliance support for businesses and individuals nationwide.</p>
-  <a href="#contact" class="button">Book Free Consultation</a>
+  <a href="https://calendly.com/your-username/free-consultation" class="button" target="_blank">Book Free Consultation</a>
+  <a href="#contact" class="button" style="background:#374151;">Or Send a Message</a>
 </section>
 
 <section class="services" id="services">
@@ -292,15 +316,24 @@ footer {
   <h2>Get in Touch</h2>
   <p>Serving clients across all of Ireland | Based in Dublin</p>
   <p><a href="mailto:info@acctraaccounting.com">info@acctraaccounting.com</a></p>
-  <p>Reach out for a no-obligation discussion about how we can support your needs.</p>
-</section>
 
-<footer>
-  © 2026 Acctra Accounting | Serving All of Ireland | Dublin-Based
-</footer>
-</body>
-</html>
-  <p>We're here to help — reach out for a no-obligation chat about your needs, wherever you are in Ireland.</p>
+  <div class="form-container">
+    <form action="https://formspree.io/f/your-form-id-here" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+353 1 234 5678">
+
+      <label for="message">Tell us about your needs (optional)</label>
+      <textarea id="message" name="message" placeholder="e.g., I'm a sole trader needing VAT help..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
 <footer>
