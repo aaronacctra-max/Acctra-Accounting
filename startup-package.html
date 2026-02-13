@@ -4,254 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Startup Package | Acctra Accounting</title>
-  <style>html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #f9fafb;
-  color: #111827;
-  line-height: 1.6;
-  background-image: url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'),
-                    linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92));
-  background-size: 60% auto, cover;
-  background-position: center center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  min-height: 100vh;
-}
-header {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 20px 5%;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header img { height: 70px; }
-nav a {
-  color: #111827;
-  text-decoration: none;
-  margin-left: 32px;
-  font-weight: 600;
-  font-size: 16px;
-  transition: color 0.25s ease;
-}
-nav a:hover { color: #1d4ed8; }
-.hero {
-  padding: 140px 5% 100px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.88);
-  border-radius: 0 0 2rem 2rem;
-  margin: 0 5%;
-}
-.hero h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1.25rem;
-  color: #111827;
-}
-.hero p {
-  font-size: 1.375rem;
-  color: #4b5563;
-  max-width: 720px;
-  margin: 0 auto 2.5rem;
-}
-.button {
-  display: inline-block;
-  padding: 16px 40px;
-  background: #1d4ed8;
-  color: white;
-  text-decoration: none;
-  border-radius: 9999px;
-  font-size: 1.125rem;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(29, 78, 216, 0.15);
-  transition: all 0.3s ease;
-  margin: 0 12px 12px;
-}
-.button:hover {
-  background: #1e40af;
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(29, 78, 216, 0.25);
-}
-.startup-button {
-  background: #059669 !important;
-}
-.startup-button:hover {
-  background: #047857 !important;
-}
-.services, .pricing-section, .contact {
-  padding: 100px 5%;
-  background: rgba(255, 255, 255, 0.90);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 1.5rem;
-  margin: 2rem 5%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-}
-.services h2, .pricing-section h2, .contact h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  color: #111827;
-}
-.services-subtitle {
-  font-size: 1.25rem;
-  color: #6b7280;
-  margin-bottom: 4rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-.service-item {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(229, 231, 235, 0.5);
-  border-radius: 1.5rem;
-  padding: 2rem;
-  text-align: left;
-  transition: all 0.35s ease;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
-}
-.service-item:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-}
-.service-item::before {
-  content: "✓";
-  color: #1d4ed8;
-  font-size: 1.5rem;
-  margin-right: 0.75rem;
-  font-weight: bold;
-}
-.comparison-table {
-  max-width: 1100px;
-  margin: auto;
-  border-collapse: collapse;
-  width: 100%;
-  background: white;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
-}
-.comparison-table th, .comparison-table td {
-  padding: 1.5rem 2rem;
-  text-align: left;
-  border-bottom: 1px solid #e5e7eb;
-}
-.comparison-table th {
-  background: #111827;
-  color: white;
-  font-weight: 700;
-}
-.comparison-table td strong {
-  color: #1d4ed8;
-}
-.form-container {
-  max-width: 600px;
-  margin: 3rem auto 0;
-  text-align: left;
-}
-.form-container label {
-  display: block;
-  margin: 1rem 0 0.5rem;
-  font-weight: 600;
-  color: #374151;
-}
-.form-container input,
-.form-container textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  background: #f9fafb;
-}
-.form-container textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-.form-container button {
-  margin-top: 1.5rem;
-  padding: 0.875rem 2rem;
-  background: #1d4ed8;
-  color: white;
-  border: none;
-  border-radius: 9999px;
-  font-size: 1.125rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.form-container button:hover {
-  background: #1e40af;
-  transform: translateY(-3px);
-}
-footer {
-  background: #111827;
-  color: #d1d5db;
-  text-align: center;
-  padding: 3rem 5%;
-  font-size: 1rem;
-}
-    /* Copy ALL the CSS from your index.html <style> block here */
-    /* This is very important – paste the entire <style>...</style> content from index.html */
-    /* For example (short version – replace with your full CSS): */
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: #f9fafb;
-      color: #111827;
-      line-height: 1.6;
-      background-image: url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'),
-                        linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92));
-      background-size: 60% auto, cover;
-      background-position: center center, center;
-      background-repeat: no-repeat, no-repeat;
-      background-attachment: fixed, fixed;
-      min-height: 100vh;
-    }
-    header {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(12px);
-      padding: 20px 5%;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid rgba(229, 231, 235, 0.5);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header img { height: 70px; }
-    nav a {
-      color: #111827;
-      text-decoration: none;
-      margin-left: 32px;
-      font-weight: 600;
-      font-size: 16px;
-      transition: color 0.25s ease;
-    }
-    nav a:hover, nav a.active { color: #1d4ed8; border-bottom: 3px solid #1d4ed8; }
-    /* ... paste ALL the rest of your CSS (hero, button, sections, footer, etc.) ... */
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 0; background: #f9fafb; color: #111827; }
+    header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+    nav a { margin-left: 1.5rem; text-decoration: none; color: #111827; font-weight: 600; }
+    nav a.active { color: #1d4ed8; border-bottom: 3px solid #1d4ed8; }
+    .hero { padding: 6rem 5% 4rem; text-align: center; background: linear-gradient(135deg, #f9fafb, #e5e7eb); }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .content { padding: 4rem 5%; max-width: 1100px; margin: auto; background: white; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    footer { background: #111827; color: white; text-align: center; padding: 2rem; }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg" alt="Acctra Accounting Logo" loading="lazy">
+  <img src="3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg" alt="Logo" style="height: 60px;">
   <nav>
     <a href="index.html">Home</a>
     <a href="index.html#services">Services</a>
@@ -262,34 +29,31 @@ footer {
 </header>
 
 <section class="hero">
-  <h1>Startup Package for New Limited Companies</h1>
-  <p>Dublin-based experts helping newly incorporated businesses get compliant fast — from CRO incorporation support to Revenue registrations, first-year bookkeeping, VAT/PAYE setup, financial statements, and year-end accounts completion. Focus on growth; we handle the admin.</p>
-  <a href="index.html#contact" class="button">Book a Free Startup Consultation</a>
+  <h1>Startup Package</h1>
+  <p>Tailored for new limited companies in Ireland — incorporation support, tax registration, first-year compliance and more.</p>
 </section>
 
-<section style="padding: 100px 5%; background: rgba(255,255,255,0.90); backdrop-filter: blur(8px); border-radius: 1.5rem; margin: 2rem 5%; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
-  <h2>What's Included in the Startup Package</h2>
-  <div class="services-grid">
-    <div class="service-item">Company incorporation guidance & Form A1 preparation support (CRO registration)</div>
-    <div class="service-item">Revenue tax registration (Corporation Tax, VAT if applicable, PAYE/PRSI setup)</div>
-    <div class="service-item">Initial bookkeeping setup & reconciliations for first 6–12 months</div>
-    <div class="service-item">VAT returns filing (quarterly/bi-monthly as required)</div>
-    <div class="service-item">Payroll processing setup for up to 2–3 employees/directors</div>
-    <div class="service-item">Preparation of first financial statements</div>
-    <div class="service-item">Year End Accounts Completion & first annual CRO B1 return support</div>
-    <div class="service-item">Corporation Tax (CT1) return & filing for initial period</div>
-    <div class="service-item">Director personal tax basics (Form 11 guidance)</div>
-    <div class="service-item">Priority support with quarterly check-ins in the first year</div>
-  </div>
-  <p style="text-align: center; font-size: 1.25rem; margin-top: 3rem; color: #334155; font-weight: 500;">
-    Starting from €199 + VAT/month (or custom one-time setup fee option).<br>
-    Ideal for pre-trading or low-activity startups — scales as your business grows.
+<section class="content">
+  <h2>What's Included</h2>
+  <ul>
+    <li>Company incorporation guidance (CRO Form A1)</li>
+    <li>Revenue registration (CT, VAT, PAYE)</li>
+    <li>Initial bookkeeping & reconciliations</li>
+    <li>First financial statements & year-end accounts</li>
+    <li>Priority support for the first year</li>
+  </ul>
+  <p style="text-align:center; margin-top:3rem;">
+    Starting from €199 + VAT/month<br>
+    <a href="index.html#contact" style="color:#1d4ed8; font-weight:bold;">Get in touch to customise</a>
   </p>
 </section>
 
 <footer>
-  © 2026 Acctra Accounting | Serving All of Ireland | Dublin-Based
+  © 2026 Acctra Accounting | Dublin, Ireland
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
