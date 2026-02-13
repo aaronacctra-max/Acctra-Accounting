@@ -6,224 +6,23 @@
 <title>Acctra Accounting | Expert Accountants Across Ireland</title>
 <meta name="description" content="Dublin-based accounting firm offering reliable tax returns, bookkeeping, VAT, payroll, and compliance support for businesses and individuals across all of Ireland.">
 <style>
-/* Global */
+/* Paste your entire previous <style> block here — same as before */
 html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #f9fafb;
-  color: #111827;
-  line-height: 1.6;
-  /* Subtle logo watermark background */
-  background-image:
-    url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'),
-    linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92));
-  background-size: 60% auto, cover;
-  background-position: center center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  min-height: 100vh;
-}
-/* Header */
-header {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 20px 5%;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header img {
-  height: 70px;
-}
-nav a {
-  color: #111827;
-  text-decoration: none;
-  margin-left: 32px;
-  font-weight: 600;
-  font-size: 16px;
-  transition: color 0.25s ease;
-}
-nav a:hover {
-  color: #1d4ed8;
-}
-/* Hero */
-.hero {
-  padding: 140px 5% 100px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.88);
-  border-radius: 0 0 2rem 2rem;
-  margin: 0 5%;
-}
-.hero h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1.25rem;
-  color: #111827;
-}
-.hero p {
-  font-size: 1.375rem;
-  color: #4b5563;
-  max-width: 720px;
-  margin: 0 auto 2.5rem;
-}
-.button {
-  display: inline-block;
-  padding: 16px 40px;
-  background: #1d4ed8;
-  color: white;
-  text-decoration: none;
-  border-radius: 9999px;
-  font-size: 1.125rem;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(29, 78, 216, 0.15);
-  transition: all 0.3s ease;
-  margin: 0 12px 12px;
-}
-.button:hover {
-  background: #1e40af;
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(29, 78, 216, 0.25);
-}
-/* Sections with overlay */
-.services, .pricing-section, .contact {
-  padding: 100px 5%;
-  background: rgba(255, 255, 255, 0.90);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 1.5rem;
-  margin: 2rem 5%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-}
-.services h2, .pricing-section h2, .contact h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  color: #111827;
-}
-.services-subtitle {
-  font-size: 1.25rem;
-  color: #6b7280;
-  margin-bottom: 4rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-.service-item {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(229, 231, 235, 0.5);
-  border-radius: 1.5rem;
-  padding: 2rem;
-  text-align: left;
-  transition: all 0.35s ease;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
-}
-.service-item:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-}
-.service-item::before {
-  content: "✓";
-  color: #1d4ed8;
-  font-size: 1.5rem;
-  margin-right: 0.75rem;
-  font-weight: bold;
-}
-/* Pricing table */
-.comparison-table {
-  max-width: 1100px;
-  margin: auto;
-  border-collapse: collapse;
-  width: 100%;
-  background: white;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
-}
-.comparison-table th, .comparison-table td {
-  padding: 1.5rem 2rem;
-  text-align: left;
-  border-bottom: 1px solid #e5e7eb;
-}
-.comparison-table th {
-  background: #111827;
-  color: white;
-  font-weight: 700;
-}
-.comparison-table td strong {
-  color: #1d4ed8;
-}
-/* Contact form */
-.form-container {
-  max-width: 600px;
-  margin: 3rem auto 0;
-  text-align: left;
-}
-.form-container label {
-  display: block;
-  margin: 1rem 0 0.5rem;
-  font-weight: 600;
-  color: #374151;
-}
-.form-container input,
-.form-container textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  background: #f9fafb;
-}
-.form-container textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-.form-container button {
-  margin-top: 1.5rem;
-  padding: 0.875rem 2rem;
-  background: #1d4ed8;
-  color: white;
-  border: none;
-  border-radius: 9999px;
-  font-size: 1.125rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.form-container button:hover {
-  background: #1e40af;
-  transform: translateY(-3px);
-}
-/* Footer */
-footer {
-  background: #111827;
-  color: #d1d5db;
-  text-align: center;
-  padding: 3rem 5%;
-  font-size: 1rem;
-}
+body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f9fafb; color: #111827; line-height: 1.6;
+  background-image: url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'), linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92));
+  background-size: 60% auto, cover; background-position: center center, center; background-repeat: no-repeat, no-repeat; background-attachment: fixed, fixed; min-height: 100vh; }
+/* ... rest of your CSS ... (header, hero, button, sections, footer, etc.) ... */
 </style>
 </head>
 <body>
+
 <header>
   <img src="3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg" alt="Acctra Accounting Logo" loading="lazy">
   <nav>
-    <a href="#">Home</a>
-    <a href="#services">Services</a>
-    <a href="#pricing">Packages</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
@@ -231,105 +30,12 @@ footer {
   <h1>Expert Accounting Services Across Ireland</h1>
   <p>Dublin-based firm delivering reliable bookkeeping, tax, VAT, payroll, and compliance support for businesses and individuals nationwide.</p>
   <a href="https://calendly.com/your-username/free-consultation" class="button" target="_blank">Book Free Consultation</a>
-  <a href="#contact" class="button" style="background:#374151;">Or Send a Message</a>
-</section>
-
-<section class="services" id="services">
-  <h2>Our Services</h2>
-  <p class="services-subtitle">We handle the details so you can focus on growth and peace of mind — serving clients from every corner of Ireland.</p>
-  <div class="services-grid">
-    <div class="service-item">Bookkeeping & Reconciliations</div>
-    <div class="service-item">VAT Returns (Any Frequency)</div>
-    <div class="service-item">Payroll Processing</div>
-    <div class="service-item">Self-Assessment Tax Returns</div>
-    <div class="service-item">Business & Company Registration</div>
-    <div class="service-item">Corporate Tax Returns (CT1)</div>
-    <div class="service-item">Financial Statements</div>
-    <div class="service-item">Year End Accounts Completion</div>
-    <div class="service-item">Tax Preparation & Filing (Personal & Corporate)</div>
-    <div class="service-item">Budgeting & Cash Flow Forecasting</div>
-    <div class="service-item">Revenue Audit & Compliance Support</div>
-  </div>
-</section>
-
-<section class="pricing-section" id="pricing">
-  <h2>Our Packages</h2>
-  <table class="comparison-table">
-    <tr>
-      <th>Feature</th>
-      <th>Growth & Compliance</th>
-      <th>Premium Growth</th>
-    </tr>
-    <tr>
-      <td>Bookkeeping</td>
-      <td>Monthly bookkeeping & reconciliations</td>
-      <td>Enhanced monthly bookkeeping + full management accounts</td>
-    </tr>
-    <tr>
-      <td>VAT Returns</td>
-      <td>Quarterly or bi-monthly filing</td>
-      <td>Unlimited VAT filing (any frequency)</td>
-    </tr>
-    <tr>
-      <td>Tax Returns</td>
-      <td>CT1 / Form 11 filing</td>
-      <td>CT1 / Form 11 + proactive tax planning advice</td>
-    </tr>
-    <tr>
-      <td>CRO Filings</td>
-      <td>Annual B1 return</td>
-      <td>Annual B1 + full statutory accounts filing</td>
-    </tr>
-    <tr>
-      <td>Payroll</td>
-      <td>Basic setup (1–2 employees)</td>
-      <td>Full payroll processing for up to 5 employees</td>
-    </tr>
-    <tr>
-      <td>Financial Statements</td>
-      <td>Preparation & review</td>
-      <td><strong>Full preparation + detailed notes & analysis</strong></td>
-    </tr>
-    <tr>
-      <td>Year End Accounts Completion</td>
-      <td>Annual completion & CRO submission support</td>
-      <td><strong>Comprehensive completion + statutory accounts filing</strong></td>
-    </tr>
-    <tr>
-      <td>Advisory & Support</td>
-      <td>General queries & email support</td>
-      <td>Quarterly business reviews, strategy calls & KPI dashboards</td>
-    </tr>
-  </table>
-</section>
-
-<section class="contact" id="contact">
-  <h2>Get in Touch</h2>
-  <p>Serving clients across all of Ireland | Based in Dublin</p>
-  <p><a href="mailto:info@acctraaccounting.com">info@acctraaccounting.com</a></p>
-
-  <div class="form-container">
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="7ed2545b-4e09-4aa8-8474-5f26ad61093f">
-      <input type="checkbox" name="botcheck" style="display: none;" />
-      <!-- <input type="hidden" name="redirect" value="https://your-site.com/thanks.html"> -->
-
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required placeholder="Your name">
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-
-      <label for="message">Tell us about your needs</label>
-      <textarea id="message" name="message" required placeholder="e.g., I'm a sole trader needing VAT help..."></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+  <a href="contact.html" class="button" style="background:#374151;">Or Send a Message</a>
 </section>
 
 <footer>
   © 2026 Acctra Accounting | Serving All of Ireland | Dublin-Based
 </footer>
+
 </body>
 </html>
