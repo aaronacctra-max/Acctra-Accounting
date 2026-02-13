@@ -17,11 +17,11 @@ body {
   /* Subtle logo watermark background */
   background-image:
     url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'),
-    linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92)); /* faint overlay for readability */
-  background-size: 60% auto, cover; /* logo size ~60% width, centered; adjust % as needed */
+    linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92));
+  background-size: 60% auto, cover;
   background-position: center center, center;
   background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed; /* fixed watermark effect */
+  background-attachment: fixed, fixed;
   min-height: 100vh;
 }
 /* Header */
@@ -56,7 +56,7 @@ nav a:hover {
 .hero {
   padding: 140px 5% 100px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.88); /* slight overlay for contrast */
+  background: rgba(255, 255, 255, 0.88);
   border-radius: 0 0 2rem 2rem;
   margin: 0 5%;
 }
@@ -90,7 +90,7 @@ nav a:hover {
   transform: translateY(-4px);
   box-shadow: 0 15px 35px rgba(29, 78, 216, 0.25);
 }
-/* Services, Pricing, Contact - with subtle overlay for readability */
+/* Sections with overlay */
 .services, .pricing-section, .contact {
   padding: 100px 5%;
   background: rgba(255, 255, 255, 0.90);
@@ -106,7 +106,6 @@ nav a:hover {
   margin-bottom: 1rem;
   color: #111827;
 }
-/* Rest of styles (services grid, table, form, footer) remain similar */
 .services-subtitle {
   font-size: 1.25rem;
   color: #6b7280;
@@ -227,30 +226,32 @@ footer {
     <a href="#contact">Contact</a>
   </nav>
 </header>
+
 <section class="hero">
   <h1>Expert Accounting Services Across Ireland</h1>
   <p>Dublin-based firm delivering reliable bookkeeping, tax, VAT, payroll, and compliance support for businesses and individuals nationwide.</p>
   <a href="https://calendly.com/your-username/free-consultation" class="button" target="_blank">Book Free Consultation</a>
   <a href="#contact" class="button" style="background:#374151;">Or Send a Message</a>
 </section>
+
 <section class="services" id="services">
   <h2>Our Services</h2>
   <p class="services-subtitle">We handle the details so you can focus on growth and peace of mind — serving clients from every corner of Ireland.</p>
   <div class="services-grid">
     <div class="service-item">Bookkeeping & Reconciliations</div>
-    <div class="service-item">Financial Statements Preparation</div>
-    <div class="service-item">Tax Preparation & Filing (Personal & Corporate)</div>
     <div class="service-item">VAT Returns (Any Frequency)</div>
     <div class="service-item">Payroll Processing</div>
     <div class="service-item">Self-Assessment Tax Returns</div>
     <div class="service-item">Business & Company Registration</div>
     <div class="service-item">Corporate Tax Returns (CT1)</div>
+    <div class="service-item">Financial Statements</div>
+    <div class="service-item">Year End Accounts Completion</div>
+    <div class="service-item">Tax Preparation & Filing (Personal & Corporate)</div>
     <div class="service-item">Budgeting & Cash Flow Forecasting</div>
-    <div class="service-item">Management Accounts & Reporting</div>
-    <div class="service-item">Year-End Accounts & CRO Filings</div>
     <div class="service-item">Revenue Audit & Compliance Support</div>
   </div>
 </section>
+
 <section class="pricing-section" id="pricing">
   <h2>Our Packages</h2>
   <table class="comparison-table">
@@ -289,18 +290,9 @@ footer {
       <td>General queries & email support</td>
       <td>Quarterly business reviews, strategy calls & KPI dashboards</td>
     </tr>
-    <tr>
-      <td>Support Level</td>
-      <td>Standard</td>
-      <td><strong>Priority (24-hour response)</strong></td>
-    </tr>
-    <tr>
-      <td>Reporting</td>
-      <td>Basic monthly reports</td>
-      <td><strong>Detailed monthly/quarterly insights</strong></td>
-    </tr>
   </table>
 </section>
+
 <section class="contact" id="contact">
   <h2>Get in Touch</h2>
   <p>Serving clients across all of Ireland | Based in Dublin</p>
@@ -308,13 +300,8 @@ footer {
 
   <div class="form-container">
     <form action="https://api.web3forms.com/submit" method="POST">
-      <!-- Your Web3Forms access key -->
       <input type="hidden" name="access_key" value="7ed2545b-4e09-4aa8-8474-5f26ad61093f">
-
-      <!-- Honeypot for basic spam protection (invisible to humans) -->
       <input type="checkbox" name="botcheck" style="display: none;" />
-
-      <!-- Optional: Redirect to a thank-you page after submit (uncomment if you create one) -->
       <!-- <input type="hidden" name="redirect" value="https://your-site.com/thanks.html"> -->
 
       <label for="name">Full Name</label>
@@ -330,6 +317,7 @@ footer {
     </form>
   </div>
 </section>
+
 <footer>
   © 2026 Acctra Accounting | Serving All of Ireland | Dublin-Based
 </footer>
