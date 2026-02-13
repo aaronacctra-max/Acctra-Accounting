@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startup Package | Acctra Accounting – New Limited Companies in Ireland</title>
+<meta name="description" content="Tailored accounting & compliance package for newly incorporated limited companies: CRO support, Revenue registration, first-year bookkeeping, VAT/PAYE setup, financial statements, year-end accounts completion, and more.">
+<style>
+/* Paste your full CSS from index.html here (watermark, header, buttons, sections, footer, etc.) */
+/* Example starter – replace with your actual CSS */
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f9fafb; color: #111827; line-height: 1.6;
+  background-image: url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'), linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92));
+  background-size: 60% auto, cover; background-position: center center, center; background-repeat: no-repeat, no-repeat; background-attachment: fixed, fixed; min-height: 100vh; }
+/* ... add the rest of your CSS (header, nav, button styles, footer, etc.) ... */
+</style>
+</head>
+<body>
+
+<header>
+  <img src="3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg" alt="Acctra Accounting Logo" loading="lazy">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#pricing">Packages</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="startup-package.html" class="active">Startup Package</a>
+  </nav>
+</header>
+
+<section class="hero" style="padding: 140px 5% 100px;">
+  <h1>Startup Package for New Limited Companies</h1>
+  <p>Dublin-based experts helping newly incorporated businesses get compliant fast — from CRO incorporation support to Revenue registrations, first-year bookkeeping, VAT/PAYE setup, financial statements, and year-end accounts completion. Focus on growth; we handle the admin.</p>
+  <a href="#contact" class="button">Book a Free Startup Consultation</a>
+</section>
+
+<section style="padding: 100px 5%; background: rgba(255,255,255,0.90); backdrop-filter: blur(8px); border-radius: 1.5rem; margin: 2rem 5%; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
+  <h2>What's Included in the Startup Package</h2>
+  <div class="services-grid"> <!-- Reuse your grid style for consistency -->
+    <div class="service-item">Company incorporation guidance & Form A1 preparation support (CRO registration)</div>
+    <div class="service-item">Revenue tax registration (Corporation Tax, VAT if applicable, PAYE/PRSI setup)</div>
+    <div class="service-item">Initial bookkeeping setup & reconciliations for first 6–12 months</div>
+    <div class="service-item">VAT returns filing (quarterly/bi-monthly as required)</div>
+    <div class="service-item">Payroll processing setup for up to 2–3 employees/directors</div>
+    <div class="service-item">Preparation of first financial statements</div>
+    <div class="service-item">Year End Accounts Completion & first annual CRO B1 return support (due 6 months after incorporation)</div>
+    <div class="service-item">Corporation Tax (CT1) return & filing for initial period</div>
+    <div class="service-item">Director personal tax basics (Form 11 guidance)</div>
+    <div class="service-item">Priority support with quarterly check-ins in the first year</div>
+  </div>
+  <p style="text-align: center; font-size: 1.25rem; margin-top: 3rem; color: #334155; font-weight: 500;">
+    Starting from €199 + VAT/month (or custom one-time setup fee). Ideal for pre-trading or low-activity startups — scales as your business grows.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Ready to Get Your New Company Compliant?</h2>
+  <p>Serving startups across all of Ireland | Based in Dublin</p>
+  <p><a href="mailto:info@acctraaccounting.com">info@acctraaccounting.com</a></p>
+
+  <div class="form-container">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="7ed2545b-4e09-4aa8-8474-5f26ad61093f">
+      <input type="checkbox" name="botcheck" style="display: none;" />
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+
+      <label for="message">Tell us about your new company (optional)</label>
+      <textarea id="message" name="message" placeholder="e.g., Just incorporated, need help with first VAT and year-end setup..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Acctra Accounting | Serving All of Ireland | Dublin-Based
+</footer>
+
+</body>
+</html>
