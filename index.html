@@ -3,195 +3,210 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Acctra Accounting | Dublin, Ireland</title>
-<meta name="description" content="Professional accounting services in Dublin, Ireland. Tax returns, bookkeeping, VAT and business support.">
-
+<title>Acctra Accounting | Expert Accountants Across Ireland</title>
+<meta name="description" content="Dublin-based accounting firm offering modern, reliable services nationwide: tax returns, bookkeeping, VAT, payroll, and compliance support for businesses and individuals across all of Ireland.">
 <style>
 /* Global */
+html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacOSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #f8fafc;
-  color: #1e293b;
+  color: #0f172a;
   line-height: 1.6;
 }
-
-/* Modern Header */
+/* Header */
 header {
   background: white;
-  padding: 20px 40px;
+  padding: 24px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
 }
-
 header img {
-  height: 80px; /* Larger, more premium */
+  height: 80px;
 }
-
 nav a {
   color: #0f172a;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 32px;
   font-size: 16px;
   font-weight: 600;
+  transition: color 0.2s;
 }
-
 nav a:hover {
   color: #2563eb;
 }
-
 /* Hero */
 .hero {
-  padding: 120px 20px;
+  padding: 140px 24px 100px;
   text-align: center;
-  background: white;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 }
-
-.hero h2 {
-  font-size: 46px;
-  margin-bottom: 15px;
+.hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 16px;
   color: #0f172a;
-  font-weight: 700;
 }
-
 .hero p {
-  font-size: 20px;
+  font-size: 22px;
   color: #475569;
-  max-width: 650px;
-  margin: auto;
+  max-width: 700px;
+  margin: 0 auto 32px;
+  font-weight: 400;
 }
-
 .button {
   display: inline-block;
-  margin-top: 35px;
-  padding: 16px 34px;
+  padding: 18px 40px;
   background: #2563eb;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 600;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.2);
+  transition: all 0.3s ease;
 }
-
 .button:hover {
   background: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37,99,235,0.25);
 }
-
 /* Services */
 .services {
-  padding: 80px 20px;
-  background: #ffffff;
+  padding: 100px 24px;
+  background: white;
   text-align: center;
 }
-
-.services h3 {
-  font-size: 34px;
-  margin-bottom: 10px;
+.services h2 {
+  font-size: 42px;
+  margin-bottom: 16px;
   color: #0f172a;
+  font-weight: 800;
 }
-
 .services-subtitle {
-  font-size: 18px;
-  color: #475569;
-  margin-bottom: 40px;
+  font-size: 20px;
+  color: #64748b;
+  margin-bottom: 48px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px 40px;
-  max-width: 900px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
   margin: auto;
-  text-align: left;
 }
-
 .service-item {
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 12px;
   font-size: 18px;
+  font-weight: 600;
   color: #1e293b;
-  padding-left: 5px;
+  text-align: left;
+  transition: all 0.3s;
+  border: 1px solid #e2e8f0;
 }
-
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  border-color: #cbd5e1;
+}
+.service-item::before {
+  content: "✓ ";
+  color: #2563eb;
+  font-weight: bold;
+  margin-right: 8px;
+}
 .cta-line {
-  margin-top: 40px;
-  font-size: 18px;
+  margin-top: 48px;
+  font-size: 20px;
   color: #334155;
-  font-weight: 500;
+  font-weight: 600;
 }
-
-/* Comparison Table */
+/* Pricing */
 .pricing-section {
-  padding: 80px 20px;
+  padding: 100px 24px;
   background: #f1f5f9;
   text-align: center;
 }
-
-.pricing-section h3 {
-  font-size: 34px;
-  margin-bottom: 40px;
+.pricing-section h2 {
+  font-size: 42px;
+  margin-bottom: 48px;
   color: #0f172a;
 }
-
 .comparison-table {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   border-collapse: collapse;
   width: 100%;
   background: white;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
-
 .comparison-table th, .comparison-table td {
-  padding: 18px;
+  padding: 22px;
   border-bottom: 1px solid #e2e8f0;
   text-align: left;
   font-size: 17px;
 }
-
 .comparison-table th {
-  background: #f8fafc;
+  background: #0f172a;
+  color: white;
   font-weight: 700;
-  color: #0f172a;
 }
-
 .comparison-table tr:last-child td {
   border-bottom: none;
 }
-
 .comparison-table td strong {
   color: #2563eb;
 }
-
 /* Contact */
 .contact {
-  padding: 80px 20px;
+  padding: 100px 24px;
   text-align: center;
+  background: white;
 }
-
-.contact h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
+.contact h2 {
+  font-size: 40px;
+  margin-bottom: 24px;
 }
-
+.contact p {
+  font-size: 20px;
+  margin: 12px 0;
+}
+.contact a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
 /* Footer */
 footer {
   background: #0f172a;
-  color: white;
+  color: #cbd5e1;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  padding: 32px 24px;
+  font-size: 15px;
 }
 </style>
 </head>
-
 <body>
-
 <header>
-  <img src="3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg" alt="Acctra Accounting Logo">
-
+  <img src="3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg" alt="Acctra Accounting Logo" loading="lazy">
   <nav>
     <a href="#">Home</a>
     <a href="#services">Services</a>
@@ -201,104 +216,91 @@ footer {
 </header>
 
 <section class="hero">
-  <h2>Professional Accounting Services in Dublin</h2>
-  <p>Reliable, modern and efficient accounting solutions for businesses and individuals across Ireland.</p>
-  <a href="#contact" class="button">Book a Free Consultation</a>
+  <h1>Modern Accounting Services Across Ireland</h1>
+  <p>Dublin-based experts providing reliable, efficient, and stress-free financial solutions for businesses and individuals nationwide.</p>
+  <a href="#contact" class="button">Book Your Free Consultation Today</a>
 </section>
 
 <section class="services" id="services">
-  <h3>Our Accounting Services</h3>
-  <p class="services-subtitle">
-    We help individuals and businesses stay organized, compliant, and financially confident.
-  </p>
-
+  <h2>Our Core Services</h2>
+  <p class="services-subtitle">We deliver compliance, insights, and peace of mind to clients across all of Ireland — so you can focus on what matters most: growing your business or managing your finances.</p>
   <div class="services-grid">
-    <div class="service-item">✓ Bookkeeping</div>
-    <div class="service-item">✓ Financial Statements</div>
-    <div class="service-item">✓ Tax Preparation & Filing</div>
-    <div class="service-item">✓ VAT Returns</div>
-    <div class="service-item">✓ Payroll Services</div>
-    <div class="service-item">✓ Self-Assessment Tax Returns</div>
-    <div class="service-item">✓ Business Registration</div>
-    <div class="service-item">✓ Corporate Tax Returns</div>
-    <div class="service-item">✓ Budgeting & Cash Flow Forecasting</div>
-    <div class="service-item">✓ Management Accounts</div>
-    <div class="service-item">✓ Year-End Accounts</div>
-    <div class="service-item">✓ Revenue Compliance Support</div>
+    <div class="service-item">Bookkeeping & Reconciliations</div>
+    <div class="service-item">Financial Statements Preparation</div>
+    <div class="service-item">Tax Preparation & Filing (Personal & Corporate)</div>
+    <div class="service-item">VAT Returns (Any Frequency)</div>
+    <div class="service-item">Payroll Processing & RTI</div>
+    <div class="service-item">Self-Assessment Tax Returns</div>
+    <div class="service-item">Business & Company Registration</div>
+    <div class="service-item">Corporate Tax (CT1) Returns</div>
+    <div class="service-item">Budgeting & Cash Flow Forecasting</div>
+    <div class="service-item">Management Accounts & KPI Reporting</div>
+    <div class="service-item">Year-End Accounts & CRO Filings</div>
+    <div class="service-item">Revenue Audit & Compliance Support</div>
   </div>
-
-  <p class="cta-line">📧 Contact us today to simplify your finances.</p>
+  <p class="cta-line">Ready to simplify your finances nationwide? Get in touch today.</p>
 </section>
 
 <section class="pricing-section" id="pricing">
-  <h3>Package Comparison</h3>
-
+  <h2>Choose Your Package</h2>
   <table class="comparison-table">
     <tr>
       <th>Feature</th>
-      <th>Growth & Compliance Package</th>
-      <th>Premium Growth Package</th>
+      <th>Growth & Compliance</th>
+      <th>Premium Growth</th>
     </tr>
-
     <tr>
       <td>Bookkeeping</td>
-      <td>✔ Monthly bookkeeping & reconciliations</td>
-      <td>✔ Enhanced monthly bookkeeping + management accounts</td>
+      <td>Monthly bookkeeping & reconciliations</td>
+      <td>Enhanced monthly bookkeeping + full management accounts</td>
     </tr>
-
     <tr>
       <td>VAT Returns</td>
-      <td>✔ Quarterly/bi-monthly VAT filing</td>
-      <td>✔ Unlimited VAT filing (any frequency)</td>
+      <td>Quarterly or bi-monthly filing</td>
+      <td>Unlimited VAT filing (any frequency)</td>
     </tr>
-
     <tr>
       <td>Tax Returns</td>
-      <td>✔ CT1 / Form 11 filing</td>
-      <td>✔ CT1 / Form 11 + proactive tax planning</td>
+      <td>CT1 / Form 11 filing</td>
+      <td>CT1 / Form 11 + proactive tax planning advice</td>
     </tr>
-
     <tr>
       <td>CRO Filings</td>
-      <td>✔ Annual B1 return</td>
-      <td>✔ Annual B1 + full accounts filing</td>
+      <td>Annual B1 return</td>
+      <td>Annual B1 + full statutory accounts filing</td>
     </tr>
-
     <tr>
       <td>Payroll</td>
-      <td>✔ Basic setup (1–2 employees)</td>
-      <td>✔ Full payroll for up to 5 employees</td>
+      <td>Basic setup (1–2 employees)</td>
+      <td>Full payroll processing for up to 5 employees</td>
     </tr>
-
     <tr>
-      <td>Advisory</td>
-      <td>✔ General support & queries</td>
-      <td>✔ Quarterly reviews, strategy calls, KPI tracking</td>
+      <td>Advisory & Support</td>
+      <td>General queries & email support</td>
+      <td>Quarterly business reviews, strategy calls & KPI dashboards</td>
     </tr>
-
     <tr>
       <td>Support Level</td>
-      <td>✔ Standard support</td>
-      <td><strong>✔ Priority support (24-hour response)</strong></td>
+      <td>Standard</td>
+      <td><strong>Priority (24-hour response)</strong></td>
     </tr>
-
     <tr>
       <td>Reporting</td>
-      <td>✔ Basic management reports</td>
-      <td><strong>✔ Detailed monthly/quarterly reports</strong></td>
+      <td>Basic monthly reports</td>
+      <td><strong>Detailed monthly/quarterly insights</strong></td>
     </tr>
   </table>
 </section>
 
 <section class="contact" id="contact">
-  <h3>Contact Us</h3>
-  <p>Dublin, Ireland</p>
-  <p>Email and phone details coming soon.</p>
+  <h2>Contact Acctra Accounting</h2>
+  <p>Serving clients across all of Ireland | Based in Dublin</p>
+  <p><a href="mailto:info@acctraaccounting.com">info@acctraaccounting.com</a></p>
+  <p>We're here to help — reach out for a no-obligation chat about your needs, wherever you are in Ireland.</p>
 </section>
 
 <footer>
-  © 2026 Acctra Accounting | Dublin, Ireland
+  © 2026 Acctra Accounting | Serving All of Ireland | Dublin-Based
 </footer>
-
 </body>
 </html>
