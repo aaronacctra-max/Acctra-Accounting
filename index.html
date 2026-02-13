@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Acctra Accounting | Expert Accountants Across Ireland</title>
-<meta name="description" content="Dublin-based accounting firm offering reliable tax returns, bookkeeping, VAT, payroll, financial statements, year-end accounts, and compliance support for businesses and individuals across all of Ireland.">
+<meta name="description" content="Dublin-based accounting firm offering reliable tax returns, bookkeeping, VAT, payroll, and compliance support for businesses and individuals across all of Ireland.">
 <style>
+/* Global */
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -13,14 +14,17 @@ body {
   background-color: #f9fafb;
   color: #111827;
   line-height: 1.6;
-  background-image: url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'),
-                    linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92));
+  /* Subtle logo watermark background */
+  background-image:
+    url('3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg'),
+    linear-gradient(rgba(249, 250, 251, 0.92), rgba(249, 250, 251, 0.92));
   background-size: 60% auto, cover;
   background-position: center center, center;
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
   min-height: 100vh;
 }
+/* Header */
 header {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
@@ -34,7 +38,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header img { height: 70px; }
+header img {
+  height: 70px;
+}
 nav a {
   color: #111827;
   text-decoration: none;
@@ -43,7 +49,10 @@ nav a {
   font-size: 16px;
   transition: color 0.25s ease;
 }
-nav a:hover { color: #1d4ed8; }
+nav a:hover {
+  color: #1d4ed8;
+}
+/* Hero */
 .hero {
   padding: 140px 5% 100px;
   text-align: center;
@@ -81,12 +90,7 @@ nav a:hover { color: #1d4ed8; }
   transform: translateY(-4px);
   box-shadow: 0 15px 35px rgba(29, 78, 216, 0.25);
 }
-.startup-button {
-  background: #059669 !important;
-}
-.startup-button:hover {
-  background: #047857 !important;
-}
+/* Sections with overlay */
 .services, .pricing-section, .contact {
   padding: 100px 5%;
   background: rgba(255, 255, 255, 0.90);
@@ -137,6 +141,7 @@ nav a:hover { color: #1d4ed8; }
   margin-right: 0.75rem;
   font-weight: bold;
 }
+/* Pricing table */
 .comparison-table {
   max-width: 1100px;
   margin: auto;
@@ -160,6 +165,7 @@ nav a:hover { color: #1d4ed8; }
 .comparison-table td strong {
   color: #1d4ed8;
 }
+/* Contact form */
 .form-container {
   max-width: 600px;
   margin: 3rem auto 0;
@@ -200,6 +206,7 @@ nav a:hover { color: #1d4ed8; }
   background: #1e40af;
   transform: translateY(-3px);
 }
+/* Footer */
 footer {
   background: #111827;
   color: #d1d5db;
@@ -210,7 +217,6 @@ footer {
 </style>
 </head>
 <body>
-
 <header>
   <img src="3C67C195-98A2-499E-87D1-ACD7785574A0 (3).jpeg" alt="Acctra Accounting Logo" loading="lazy">
   <nav>
@@ -218,16 +224,14 @@ footer {
     <a href="#services">Services</a>
     <a href="#pricing">Packages</a>
     <a href="#contact">Contact</a>
-    <a href="startup-package.html">Startup Package</a>
   </nav>
 </header>
 
 <section class="hero">
   <h1>Expert Accounting Services Across Ireland</h1>
-  <p>Dublin-based firm delivering reliable bookkeeping, tax, VAT, payroll, financial statements, year-end accounts, and compliance support for businesses and individuals nationwide.</p>
+  <p>Dublin-based firm delivering reliable bookkeeping, tax, VAT, payroll, and compliance support for businesses and individuals nationwide.</p>
   <a href="https://calendly.com/your-username/free-consultation" class="button" target="_blank">Book Free Consultation</a>
   <a href="#contact" class="button" style="background:#374151;">Or Send a Message</a>
-  <a href="startup-package.html" class="button startup-button">View Startup Package</a>
 </section>
 
 <section class="services" id="services">
@@ -308,6 +312,7 @@ footer {
     <form action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="7ed2545b-4e09-4aa8-8474-5f26ad61093f">
       <input type="checkbox" name="botcheck" style="display: none;" />
+      <!-- <input type="hidden" name="redirect" value="https://your-site.com/thanks.html"> -->
 
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required placeholder="Your name">
@@ -326,6 +331,5 @@ footer {
 <footer>
   © 2026 Acctra Accounting | Serving All of Ireland | Dublin-Based
 </footer>
-
 </body>
 </html>
